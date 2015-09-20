@@ -1,9 +1,182 @@
 
+.container .jumbotron, .container-fluid .jumbotron {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #fff;
+	
+	h3 {
+		padding: 0;
+		margin: 0;
+	}
+	
+	p {
+		font-size: 15px;
+		margin: 0;
+		padding: 5px 0;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
 .navbar {
-	padding: 10px 0;
-	margin-bottom: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .navbar-default {
 	background-color: #fff;
+	
+	.navbar-nav > li > a {
+		color: #fff;
+			&:hover {
+				color: #ccc;
+			}
+	}
+
+	
+	.navbar-collapse {
+		border-color: #00347a;
+	}
+}
+
+.logo-top-nav {
+	padding: 0;
+	
+	.logo-holder {
+		position: relative;
+		text-align: center;
+	}
+	
+	.btn-aligns {
+		text-align: center;
+		padding: 10px 0;
+		span {
+			display: none;
+		}
+	}
+	
+	.btn {
+		padding: 1px 18px;
+	}
+}
+
+.main-nav-banner {
+	background-color: #00347a;
+	padding: 5px 0 35px;
+	
+	.media {
+		img {
+			&.media-object {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.main-content {
+	width: 100%;
+	padding: 40px 0 20px;
+}
+
+.panel-body {
+	&.text-center {
+		text-align: center;
+	}
+}
+
+.thumbs-holder {
+	.panel-body {
+		h1, h5 {
+			padding: 0;
+			margin: 0;
+		}
+		h1 {
+			font-size: 15px;
+		}
+		img {
+			width: 100%;
+			margin: 15px 0;
+		}
+		.btn {
+			width: 100%;
+		}
+		
+	}
+}
+
+
+.form-content {
+	
+	border-top: 1px solid #ccc;
+	
+	.form-inline {
+		padding: 20px 0;
+	}
+}
+
+.footer-content {
+
+	background-color: #166ba7;
+	border-bottom: 5px solid #00bedb;
+	
+	p {
+		width: 100%;
+		color: #fff;
+	}
+}
+
+.footer-links {
+	padding: 30px 0 20px;
+	background-color: #222;
+	color: #fff;
+	
+	a {
+		color: #fff;
+	}
+	
+	p {
+		font-size: 10px;
+	}
+}
+
+
+@media (min-width: 992px){
+	
+	.container .jumbotron, .container-fluid .jumbotron {
+		margin-top: 0;
+	}
+	
+	.logo-top-nav {
+	
+		.logo-holder {
+			text-align: left;
+
+			img {
+				position: absolute;
+				z-index: 9;
+			}
+		}
+	
+		.btn-aligns {
+			text-align: right;
+			padding: 10px 0;
+			span {
+			display: inline-block;
+			}
+		}
+		.btn {
+			padding: 1px 18px;
+		}
+	}
+	
+	.footer-content {
+	
+	p {
+		width: 75%;
+	}
+}
+
+	
 }
